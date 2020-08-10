@@ -18,3 +18,10 @@
   header nav {
     margin: 7px 0;
   }
+
+  .hero {
+      background-image: url("../images/heroimg.jpg");
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+  }
