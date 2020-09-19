@@ -36,7 +36,11 @@
   }
 
   header nav ul {
-        list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
   }
 
   header nav ul li {
@@ -45,6 +49,9 @@
 
   header nav ul li a {
       color: var(--teal);
+      margin: 0 30px;
+      font-weight: lighter;
+      font-size: 1.55vw;
       padding: 14px 15px;
       border-bottom-style: solid;
       border-bottom-color: var(--teal);
@@ -73,17 +80,90 @@
       right: 14px;
   }
 
-  .about-me {
-
+  .section-title {
+      padding-bottom: 20px;
+      text-align: center;
+      margin: 0 auto 35px auto;
+      width: 50%;
   }
 
+  .flex-row {
+      display: flex
+  }
+
+  .about-me {
+      text-align: center;
+      width: 900px;
+      margin: 0 auto 30px auto;
+      overflow: auto;
+  }
+
+  .about-me h2 {
+      padding: 35px;
+      float: left;
+      width: 65%;
+  }
+
+  .about-me p {
+      width: 35%;
+      float: left;
+      text-align: center;
+  }
+
+  .grid-container {
+      max-width: 940px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 100px);
+      grid-gap: 10px;
+      justify-items: start | end | center | stretch;
+      align-items: start | end | center | stretch;
+      place-items: <align-items>  <justify-items>;
+  }
 
   .grid-item {
+      
+  }
+
+  .item-1 {
+      background-image: url(../images/runbuddy.jpg);
+  }
+
+  .item-2 {
+      background-image: url(../images/welcomesession.jpg);
+  }
+
+  .item-3 {
+      background-image: url(../images/week1html.jpg);
+  }
+
+  .item-4 {
+      background-image: url(../images/professionalportfolio.jpg);
+  }
+
+  .contact {
       display: flex;
-      justify-content: center;
-      border: 5px solid rgba(0, 0, 0, 0.2);
-      margin: 5px auto;
-      border-radius: 5px;
-      font-size: 35px;
-      background-color: aquamarine;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+
+  .contact h2 {
+      color: var(--navy);
+      font-weight: bold;
+      text-align: center;
+      margin: 20;
+      font-size: 36px;
+  }
+
+  .contact ul li {
+      display: inline-block;
+  }
+
+  .contact ul li a {
+      color: var(--navy);
+      padding: 14px 15px;
+      border-bottom-style: solid;
+      border-bottom-color: var(--navy);
+      text-decoration: none;
   }
